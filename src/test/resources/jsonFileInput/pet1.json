@@ -1,0 +1,18 @@
+{
+  "id": 1,
+  "category": {
+    "id": 1,
+    "name": "Hybrid"
+  },
+  "name": "Moggie",
+  "photoUrls": [
+    "abc"
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "ABCD"
+    }
+  ],
+  "status": "available"
+}
