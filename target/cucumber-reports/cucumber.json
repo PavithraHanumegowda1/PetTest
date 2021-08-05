@@ -1,0 +1,1299 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1040064900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Get pet store base uri",
+            "match": {
+              "location": "PetStepDefinition.getPetStoreBaseUri()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Uploads pet image and empty image using petId",
+        "description": "",
+        "id": "everything-about-your-pets;uploads-pet-image-and-empty-image-using-petid;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2470052900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "customer uploads an image with petId 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 37
+                }
+              ],
+              "location": "PetStepDefinition.customerUploadsAnImageWithUrlPetUp(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27162000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "API response Status code 200 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStepDefinition.iShouldBeReturnedWithABasketResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@uploadImage"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 839000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Get pet store base uri",
+            "match": {
+              "location": "PetStepDefinition.getPetStoreBaseUri()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Uploads pet image and empty image using petId",
+        "description": "",
+        "id": "everything-about-your-pets;uploads-pet-image-and-empty-image-using-petid;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 625647500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "customer uploads an image with petId ",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 37
+                }
+              ],
+              "location": "PetStepDefinition.customerUploadsAnImageWithUrlPetUp(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 102823900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "API response Status code 415 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "415",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStepDefinition.iShouldBeReturnedWithABasketResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@uploadImage"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1001600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Get pet store base uri",
+            "match": {
+              "location": "PetStepDefinition.getPetStoreBaseUri()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Add a new pet to the store",
+        "description": "",
+        "id": "everything-about-your-pets;add-a-new-pet-to-the-store",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 699534900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "add a new pet info to store",
+            "match": {
+              "location": "PetStepDefinition.customerAddANewPetToStorePet()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1453100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "API response Status code 200 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStepDefinition.iShouldBeReturnedWithABasketResponse(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 608285900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "verify petID 1 and name Browny created in the response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 13
+                },
+                {
+                  "val": "Browny",
+                  "offset": 24
+                }
+              ],
+              "location": "PetStepDefinition.verifyPetInfoCreatedInTheResponse(int,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@addNewPet"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 428200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Get pet store base uri",
+            "match": {
+              "location": "PetStepDefinition.getPetStoreBaseUri()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "Add a new pet to the store with not enough info",
+        "description": "",
+        "id": "everything-about-your-pets;add-a-new-pet-to-the-store-with-not-enough-info",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 620016300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "add a new pet with missing info to store",
+            "match": {
+              "location": "PetStepDefinition.customerAddANewPetToStore()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 826400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "API response Status code 405 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "405",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStepDefinition.iShouldBeReturnedWithABasketResponse(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 34171600,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I verify API response errorCode 405 and errorMessage no data",
+            "match": {
+              "arguments": [
+                {
+                  "val": "405",
+                  "offset": 32
+                },
+                {
+                  "val": "no data",
+                  "offset": 53
+                }
+              ],
+              "location": "PetStepDefinition.iVerifyAPIResponseErrorCodeAndErrorMessage(int,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@addNewPet"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 635300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Get pet store base uri",
+            "match": {
+              "location": "PetStepDefinition.getPetStoreBaseUri()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 28,
+        "name": "update an existing pet information",
+        "description": "",
+        "id": "everything-about-your-pets;update-an-existing-pet-information",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 652067800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "update existing pet info",
+            "match": {
+              "location": "PetStepDefinition.updateExistingPetInfoPet()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2767400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "API response Status code 200 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStepDefinition.iShouldBeReturnedWithABasketResponse(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 25327100,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "verify petID 1 and name Moggie created in the response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 13
+                },
+                {
+                  "val": "Moggie",
+                  "offset": 24
+                }
+              ],
+              "location": "PetStepDefinition.verifyPetInfoCreatedInTheResponse(int,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@updatePetInfo"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 377300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Get pet store base uri",
+            "match": {
+              "location": "PetStepDefinition.getPetStoreBaseUri()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "update an existing pet with wrong information",
+        "description": "",
+        "id": "everything-about-your-pets;update-an-existing-pet-with-wrong-information",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 634511900,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "update existing pet with wrong info",
+            "match": {
+              "location": "PetStepDefinition.updateExistingPetWrongInfoPet()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1113400,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "API response Status code 405 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "405",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStepDefinition.iShouldBeReturnedWithABasketResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@updatePetInfo"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 328600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Get pet store base uri",
+            "match": {
+              "location": "PetStepDefinition.getPetStoreBaseUri()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 45,
+        "name": "customer finds Pets by status",
+        "description": "",
+        "id": "everything-about-your-pets;customer-finds-pets-by-status;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 690286300,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "customer finds Pets by status available",
+            "match": {
+              "arguments": [
+                {
+                  "val": "available",
+                  "offset": 30
+                }
+              ],
+              "location": "PetStepDefinition.customerFindsPetsByStatus(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 902000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "API response Status code 200 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStepDefinition.iShouldBeReturnedWithABasketResponse(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16165800,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "verify API response is not empty",
+            "match": {
+              "location": "PetStepDefinition.verifyAPIResponseIsNotEmpty()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FindPetByStatus"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 478000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Get pet store base uri",
+            "match": {
+              "location": "PetStepDefinition.getPetStoreBaseUri()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 46,
+        "name": "customer finds Pets by status",
+        "description": "",
+        "id": "everything-about-your-pets;customer-finds-pets-by-status;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 624230100,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "customer finds Pets by status pending",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pending",
+                  "offset": 30
+                }
+              ],
+              "location": "PetStepDefinition.customerFindsPetsByStatus(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 329200,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "API response Status code 200 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStepDefinition.iShouldBeReturnedWithABasketResponse(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 591800,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "verify API response is not empty",
+            "match": {
+              "location": "PetStepDefinition.verifyAPIResponseIsNotEmpty()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FindPetByStatus"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 259500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Get pet store base uri",
+            "match": {
+              "location": "PetStepDefinition.getPetStoreBaseUri()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 47,
+        "name": "customer finds Pets by status",
+        "description": "",
+        "id": "everything-about-your-pets;customer-finds-pets-by-status;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 609796600,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "customer finds Pets by status sold",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sold",
+                  "offset": 30
+                }
+              ],
+              "location": "PetStepDefinition.customerFindsPetsByStatus(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 775000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "API response Status code 200 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStepDefinition.iShouldBeReturnedWithABasketResponse(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5043100,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "verify API response is not empty",
+            "match": {
+              "location": "PetStepDefinition.verifyAPIResponseIsNotEmpty()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FindPetByStatus"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 945300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Get pet store base uri",
+            "match": {
+              "location": "PetStepDefinition.getPetStoreBaseUri()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 50,
+        "name": "Find pet info by correct petId",
+        "description": "",
+        "id": "everything-about-your-pets;find-pet-info-by-correct-petid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1203461400,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "customer get pet info by id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefinition.customerGetPetInfoByIdPet(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1040100,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "API response Status code 200 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStepDefinition.iShouldBeReturnedWithABasketResponse(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20472800,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "I verify API response is not empty and pet id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 46
+                }
+              ],
+              "location": "PetStepDefinition.iVerifyAPIResponseIsNotEmpty(int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FindPetById"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 283500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Get pet store base uri",
+            "match": {
+              "location": "PetStepDefinition.getPetStoreBaseUri()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 56,
+        "name": "Find pet info by incorrect petId",
+        "description": "",
+        "id": "everything-about-your-pets;find-pet-info-by-incorrect-petid",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1242694100,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "customer get pet info by id 10983",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10983",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefinition.customerGetPetInfoByIdPet(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 652000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "API response Status code 404 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStepDefinition.iShouldBeReturnedWithABasketResponse(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 20413000,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I verify API response errorCode 1 and errorMessage Pet not found",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 32
+                },
+                {
+                  "val": "Pet not found",
+                  "offset": 51
+                }
+              ],
+              "location": "PetStepDefinition.iVerifyAPIResponseErrorCodeAndErrorMessage(int,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FindPetById"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 335100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Get pet store base uri",
+            "match": {
+              "location": "PetStepDefinition.getPetStoreBaseUri()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 67,
+        "name": "updates a pet in store with some valid and invalid data",
+        "description": "",
+        "id": "everything-about-your-pets;updates-a-pet-in-store-with-some-valid-and-invalid-data;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 651188700,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "update a pet info with name Guffy  and status available with petId 1 in the store",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Guffy",
+                  "offset": 28
+                },
+                {
+                  "val": "available",
+                  "offset": 46
+                },
+                {
+                  "val": "1",
+                  "offset": 67
+                }
+              ],
+              "location": "PetStepDefinition.customerUpdateAPetInStoreWithSomeDataPet(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 238900,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "API response Status code 200 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStepDefinition.iShouldBeReturnedWithABasketResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@updatePetInfo"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 300600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Get pet store base uri",
+            "match": {
+              "location": "PetStepDefinition.getPetStoreBaseUri()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 68,
+        "name": "updates a pet in store with some valid and invalid data",
+        "description": "",
+        "id": "everything-about-your-pets;updates-a-pet-in-store-with-some-valid-and-invalid-data;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 617818200,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "update a pet info with name Guffy  and status available with petId 444 in the store",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Guffy",
+                  "offset": 28
+                },
+                {
+                  "val": "available",
+                  "offset": 46
+                },
+                {
+                  "val": "444",
+                  "offset": 67
+                }
+              ],
+              "location": "PetStepDefinition.customerUpdateAPetInStoreWithSomeDataPet(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 803700,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "API response Status code 404 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStepDefinition.iShouldBeReturnedWithABasketResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@updatePetInfo"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 333500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Get pet store base uri",
+            "match": {
+              "location": "PetStepDefinition.getPetStoreBaseUri()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 76,
+        "name": "delete a pet information with valid and invalid petId and verify errorCode",
+        "description": "",
+        "id": "everything-about-your-pets;delete-a-pet-information-with-valid-and-invalid-petid-and-verify-errorcode;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 641802400,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "delete the pet info with id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefinition.customerDeleteThePetInfoPet(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 210400,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "API response Status code 200 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStepDefinition.iShouldBeReturnedWithABasketResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@deletePet"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 298300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Get pet store base uri",
+            "match": {
+              "location": "PetStepDefinition.getPetStoreBaseUri()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 77,
+        "name": "delete a pet information with valid and invalid petId and verify errorCode",
+        "description": "",
+        "id": "everything-about-your-pets;delete-a-pet-information-with-valid-and-invalid-petid-and-verify-errorcode;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 599259000,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "delete the pet info with id ",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefinition.customerDeleteThePetInfoPet(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1350500,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "API response Status code 405 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "405",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStepDefinition.iShouldBeReturnedWithABasketResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@deletePet"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 649200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Get pet store base uri",
+            "match": {
+              "location": "PetStepDefinition.getPetStoreBaseUri()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 78,
+        "name": "delete a pet information with valid and invalid petId and verify errorCode",
+        "description": "",
+        "id": "everything-about-your-pets;delete-a-pet-information-with-valid-and-invalid-petid-and-verify-errorcode;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 600830600,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "delete the pet info with id 0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDefinition.customerDeleteThePetInfoPet(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4634400,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "API response Status code 404 is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 25
+                }
+              ],
+              "location": "PetStepDefinition.iShouldBeReturnedWithABasketResponse(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@deletePet"
+          }
+        ]
+      }
+    ],
+    "name": "Everything about your Pets",
+    "description": "",
+    "id": "everything-about-your-pets",
+    "keyword": "Feature",
+    "uri": "src\\test\\resources\\features\\pet.feature",
+    "tags": []
+  }
+]
