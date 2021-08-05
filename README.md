@@ -24,7 +24,7 @@ How to run tests :
 3. make sure you have all mentioned dependencies supported in the IDE
 4. Run this maven command : mvn clean install
 5. Tests written in the pet.feature should be executed along with maven build
-6.check this path target\reports\html-reports\cucumber-html-reports\overview-features.html
+6. check this path target\reports\html-reports\cucumber-html-reports\overview-features.html
 7. open overview-features.html in a chrome
 
 
